@@ -1,0 +1,11 @@
+.idea/
+DailyVision.iml
+
+AuthService/AuthService.iml
+AuthService/target/
+
+StatisticsService/StatisticsService.iml
+StatisticsService/target/
+
+Internal/Internal.iml
+Internal/target/
