@@ -9,6 +9,9 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.restdocs.mockmvc.RestDocumentationResultHandler;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import org.springframework.test.web.servlet.result.StatusResultMatchers;
 
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.preprocessResponse;
@@ -30,6 +33,7 @@ public class StatisticsControllerTest {
 
     @Test
     public void name() throws Exception {
-        //todo
+        mockMvc.perform(MockMvcRequestBuilders.post("/do"))
+                .andExpect(MockMvcResultMatchers.status().isOk());
     }
 }
