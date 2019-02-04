@@ -4,8 +4,8 @@ DailyVision.iml
 AuthService/AuthService.iml
 AuthService/target/
 
-StatisticsService/StatisticsService.iml
-StatisticsService/target/
+DataService/DataService.iml
+DataService/target/
 
 Internal/Internal.iml
 Internal/target/
