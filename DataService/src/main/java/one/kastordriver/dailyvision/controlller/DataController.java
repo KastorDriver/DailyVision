@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DataController {
 
-    @PostMapping("/do")
-    @ResponseStatus(HttpStatus.OK)
-    public void dodo() {
+    @PostMapping("/measurements")
+    @ResponseStatus(HttpStatus.CREATED)
+    public void storeMeasurements() {
 
     }
 }
